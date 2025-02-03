@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>带货达人报名表</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .form-container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #333;
+      text-align: center;
+    }
+    label {
+      display: block;
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 5px;
+    }
+    input[type="text"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+    input[type="text"]:focus,
+    select:focus,
+    textarea:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+    .checkbox-group {
+      margin-bottom: 15px;
+    }
+    .checkbox-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .checkbox-group input[type="checkbox"] {
+      margin-right: 10px;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h1>带货达人报名表</h1>
+    <form action="https://formsubmit.co/2710779589@qq.com" method="POST">
+      <!-- 姓名 -->
+      <label for="name">姓名（必填）</label>
+      <input type="text" id="name" name="name" required>
+
+      <!-- 联系电话 -->
+      <label for="phone">联系电话（必填）</label>
+      <input type="text" id="phone" name="phone" required>
+
+      <!-- 联系地址 -->
+      <label for="address">联系地址（必填）</label>
+      <input type="text" id="address" name="address" required>
+
+      <!-- 平台账号 -->
+      <label for="platform">平台（抖音/微信/快手）账号</label>
+      <input type="text" id="platform" name="platform" required>
+
+      <!-- 平台UID -->
+      <label for="platform-uid">平台（抖音/微信/快手）账号UID</label>
+      <input type="text" id="platform-uid" name="platform-uid" required>
+
+      <!-- 粉丝量级 -->
+      <label for="follower">粉丝量级</label>
+      <select id="follower" name="follower" required>
+        <option value="1万以下">1万以下</option>
+        <option value="1-10万">1-10万</option>
+        <option value="10万+">10万+</option>
+      </select>
+
+      <!-- 擅长品类 -->
+      <div class="checkbox-group">
+        <label>擅长品类</label>
+        <label><input type="checkbox" name="category" value="美妆"> 美妆</label>
+        <label><input type="checkbox" name="category" value="食品"> 食品</label>
+        <label><input type="checkbox" name="category" value="母婴"> 母婴</label>
+      </div>
+
+      <!-- 提交按钮 -->
+      <button type="submit">提交</button>
+
+      <!-- FormSubmit配置 -->
+      <input type="hidden" name="_subject" value="新达人报名提交">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+    </form>
+  </div>
+</body>
+</html>
